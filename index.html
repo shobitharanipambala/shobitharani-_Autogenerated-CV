@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="left">
+            <form>
+                <label for="name">Name:</label><input type="text" placeholder="Enter your Name "><br>
+                <label for="Email">Email:</label><input type="link" placeholder="Enter your Email"><br>
+                <label for="Phone">Phone:</label><input type="text" placeholder="Enter your phone"><br>
+                <label for="Github">Github:</label><input type="link" placeholder="Enter your Github" ><br>
+                <label for="Linkedin">Linkedin:</label><input type="link"placeholder="Enter your Linkedin"><br>
+
+                    <!-- Name , Email , Phone , Github , Linkedin -- done --->
+                <fieldset>
+                    <legend>Education</legend>
+                    <form>
+                        <lable for ="Degree"> Degree:</lable><input type ="text" placeholder="Enter your Degree"><br>
+                        <lable for ="Collage">Collage:</lable><input type ="text" placeholder="Enter your Collage"><br>
+                        <lable for ="Staring Year">Staring Year:</lable><input type ="text" placeholder="Enter your Staring Year"><br>
+                        <lable for ="Passing Year">Passing Year:</lable><input type ="text" placeholder="Enter your Passing Year"><br>
+                        <lable for ="CGPA"></lable>CGPA :<input type ="text" placeholder="Enter your CGPA"><br>
+                    </form>
+                    <!-- Degree , College , Starting Year , Passing Year , CGPA -->
+                </fieldset>
+                <!-------Skills --------------------------------------->
+
+                <fieldset>
+                    <legend>Skills</legend>
+                    <form>
+                        Skills: <textarea rows="3" cols="30" placeholder="Enter your text"></textarea>
+                    </form>
+                    </form>
+                    <!-- skills -->
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Projects</legend>
+                    <from>
+                        <label for = "Project"> Project: </label><input type="text" placeholder="Enter your project deatils "><br>
+                        Description:<textarea rows="4" cols ="30"placeholder= "Enter the decription "></textarea><br>
+                        <label for = "Link"> Link: </label><input type="text" placeholder="Enter your Link "><br>
+                       
+                    </from>
+                    <!-- Project , Description , Link -->
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <label for = "Company"> Company</label><input type="text" placeholder="Enter your project Company"><br>
+                    <label for = "Designation"> Designation: </label><input type="text" placeholder="Enter your Designation "><br>
+                    <label for = "Duration"> Duration: </label><input type="text" placeholder="Enter your Duration"><br>
+                    Description:<textarea rows="4" cols ="30"placeholder= "Enter the decription "></textarea><br>
+                    <!-- Company , Designation , Duration , Description -->
+                </fieldset>
+                <button type="submit" class="btn">submit</button>
+                <button type="reset" class="btn">reset</button>
+                <button class="btn" onclick="handleLeft()">>></button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="block1">
+                <!-- Name -->
+                <!--Email , Phone , Github , Linkedin  -->
+            </div>
+            <div class="block2">
+                <h2>Education</h2>
+            </div>
+            <div class="block3">
+            </div>
+            <div class="block4">
+                <h2>Project</h2>
+            </div>
+            <div class="block5">
+                <h2>Experience</h2>
+            </div>
+            <button class="btn print" onclick="handlePrint()">Print</button>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
