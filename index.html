@@ -83,22 +83,35 @@
               placeholder="Passing Year"
             /><br />
             <!-- CGPA  -->
-            <label for="CGPA">CGPA : </label>
+            <label for="CGPA">  CGPA : </label>
             <input type="text" id="CGPA" name="CGPA" placeholder="CGPA" /><br />
 
             <!-- Degree , College , Starting Year , Passing Year , CGPA -->
           </fieldset>
           <fieldset>
-            <legend>Skills</legend>
-            <!-- skills -->
-            <label for="skills">skills : </label>
+             <legend>Skills</legend>
+            
+            <!-- <label for="skills">skills : </label>
             <input
               type="textarea"
+              rows="8" 
+              cols="40"
               id="skills"
               name="skills"
+              
               placeholder="skills eg. HTML , CSS"
             /><br />
-          </fieldset>
+          </fieldset> -->
+          
+          Skills: <textarea rows="8" cols="30" 
+            placeholder="skills e.g. HTML, CSS, Javascript"></textarea>
+            
+       
+        <!-- skills -->
+        <!-- <form 
+            <textarea name="message" rows="50" cols="80"><input type = "text" placeholder="skills eg.HTML,CSS"</textarea> -->
+    </fieldset>
+
           <fieldset>
             <legend>Projects</legend>
             <!-- Project , Description , Link -->
@@ -112,13 +125,17 @@
             /><br />
 
             <!-- Description -->
-            <label for="Description">Description : </label>
+            <!-- <label for="Description">Description : </label>
             <input
               type="text"
               id="Description"
               name="Description"
               placeholder="write in HTML format"
-            /><br />
+            /><br /> -->
+
+            Description: <textarea rows="8" cols="30" 
+            placeholder="Write in HTML format"></textarea><br>
+
 
             <!-- Link  -->
             <label for="Link">Link : </label>
@@ -160,17 +177,22 @@
             /><br />
 
             <!-- Description -->
-            <label for="Description">Description : </label
-            ><input
+            <!-- <label for="Description">Description : </label> -->
+<!--     
               type="text"
               id="Description"
               name="Description"
               placeholder="Description"
-            /><br />
+
+            /><br /> --> 
+
+            Description: <textarea rows="8" cols="30"
+             placeholder="Write in HTML format"></textarea><br>
+
           </fieldset>
           <button type="submit" class="btn">submit</button>
           <button type="reset" class="btn">reset</button>
-          <button class="btn" onclick="handleLeft()"><<</button>
+          <button class="btn" onclick="handleLeft()">Print</button>
         </form>
       </div>
       <div class="right">
@@ -181,9 +203,17 @@
         <div class="block2">
           <h2>Education</h2>
         </div>
-        <div class="block3"></div>
+        <div class="block1">
+          <p>CGPA</p>
+         
+          
+        </div>
+        
         <div class="block4">
+          
           <h2>Project</h2>
+          <div class="block3"><h2>Skills</h2></div>
+
         </div>
         <div class="block5">
           <h2>Experience</h2>
