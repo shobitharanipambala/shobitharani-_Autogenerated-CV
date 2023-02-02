@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: whitesmoke;
+    background: rgb(252, 252, 252);
 }
 main{
     height: 100vh;
@@ -26,7 +26,7 @@ main{
     align-items: center;
 }
 main>.left{
-    background: rgb(255, 255, 76);
+    background: rgb(207, 181, 243);
     padding: 1rem;
     width: 30%;
     height: 100%;
@@ -54,7 +54,7 @@ main>.left fieldset{
     outline: none;
     border-radius: 0.5rem;
     background: black;
-    color: yellow;
+    color: rgb(107, 25, 208);
     font-weight: 600;
     cursor: pointer;
 }
@@ -76,7 +76,7 @@ main>.right>.block1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: gray;
+    color: rgb(128, 128, 128);
     width: 60vw;
 }
 .print{
