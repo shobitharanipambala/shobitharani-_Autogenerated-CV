@@ -12,7 +12,7 @@ function handleSubmit(e) {
 
   var name = document.getElementById("name").value;
   document.getElementById("display-name").innerHTML = name;
-  document.getElementById("display-name").style.fontSize = "30px";
+  //document.getElementById("display-name").style.fontSize = "30px";
  // document.getElementById("display-name").style.color = "pink";
   document.getElementById("name").value = '';
 //---------------email
@@ -132,10 +132,11 @@ function handleSubmit(e) {
   //   similarly for all the other fields
 
 
-function handleLeft() {
+function handleLeft( ) {
   const left = document.querySelector(".left");
   const right = document.querySelector(".right");
   const print = document.querySelector(".print");
+  
   // write more codes here
 }
 function handlePrint() {

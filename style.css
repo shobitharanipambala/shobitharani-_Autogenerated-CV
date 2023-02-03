@@ -129,12 +129,11 @@ main>.right>.block1{
     justify-content:left;
     align-items:left;
     flex-direction: column;
-    /* color: rgb(128, 128, 128); */
     width: 60vw;
     text-align:center ;
-    color: rgb(27, 26, 27);
-    font-size: 50px;
-    font-family: cosmic, sans-serif;
+    color: rgb(130, 125, 130);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
