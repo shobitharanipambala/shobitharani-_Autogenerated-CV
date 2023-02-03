@@ -126,12 +126,51 @@ main>.right{
 }
 main>.right>.block1{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    align-items:left;
     flex-direction: column;
-    color: rgb(128, 128, 128);
+    /* color: rgb(128, 128, 128); */
     width: 60vw;
+    text-align:center ;
+    color: rgb(27, 26, 27);
+    font-size: 50px;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
 }
+
+main>.right>.block2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color: rgb(20, 19, 19);
+    width: 60vw;
+    text-align: justify;
+    flex-direction: row;
+  
+    
+}
+main>.right>.block3{
+    display: flex;
+    justify-content:center;
+    align-items:left;
+    flex-direction: column;
+    color: rgb(20, 19, 19);
+    width: 60vw;
+    text-align:left ;
+   
+
+} 
+   
+
+.right{
+    text-align: left;
+}
+
+
+
+
+
 .print{
     display: none;
 }

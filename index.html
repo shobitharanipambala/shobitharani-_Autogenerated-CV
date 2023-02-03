@@ -16,8 +16,16 @@
         <form>
           <!-- Name , Email , Phone , Github , Linkedin -->
           <!-- name  -->
-          <label for="Name">Name :</label>
-          <input type="text" id="Name" name="Name" placeholder="Name" /><br />
+          <label for="name">Name :</label>
+          <input type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Name" 
+          value="" />
+          <br />
+          
+           
+        
 
           <!-- Email  -->
           <label for="Email">Email : </label>
@@ -26,11 +34,16 @@
             id="Email"
             name="Email"
             placeholder="Email"
+            value=""
           /><br />
 
           <!-- phone  -->
           <label for="Phone">Phone : </label>
-          <input type="tel" id="Phone" name="Phone" placeholder="Phone" /><br />
+          <input type="tel"
+           id="Phone"
+            name="Phone"
+             placeholder="Phone"
+             value="" /><br />
           <!-- Github -->
           <label for="Github">Github : </label>
           <input
@@ -38,6 +51,7 @@
             id="Github"
             name="Github"
             placeholder="Github"
+            value=""
           /><br />
 
           <!-- linkedin  -->
@@ -47,6 +61,7 @@
             id="Linkedin"
             name="Linkedin"
             placeholder="Linkedin"
+            value=""
           /><br />
           <fieldset>
             <legend>Education</legend>
@@ -57,6 +72,7 @@
               id="Degree"
               name="Degree"
               placeholder="Degree"
+              value=""
             /><br />
             <!-- College  -->
             <label for="College">College :</label
@@ -65,6 +81,7 @@
               id="College"
               name="College"
               placeholder="College"
+              value="" 
             /><br />
             <!-- Starting Year  -->
             <label for="Starting Year">Starting Year : </label>
@@ -73,6 +90,7 @@
               id="Starting Year"
               name="Starting Year"
               placeholder="Starting Year"
+              value="" 
             /><br />
             <!-- Passing Year  -->
             <label for="Passing Year">Passing Year : </label>
@@ -81,10 +99,15 @@
               id="Passing Year"
               name="Passing Year"
               placeholder="Passing Year"
+              value="" 
             /><br />
             <!-- CGPA  -->
             <label for="CGPA">  CGPA : </label>
-            <input type="text" id="CGPA" name="CGPA" placeholder="CGPA" /><br />
+            <input type="text" 
+             id="CGPA" 
+             name="CGPA"
+             placeholder="CGPA" 
+             value="" /><br />
 
             <!-- Degree , College , Starting Year , Passing Year , CGPA -->
           </fieldset>
@@ -104,13 +127,16 @@
           </fieldset> -->
           
           Skills: <textarea rows="8" cols="30" 
-            placeholder="skills e.g. HTML, CSS, Javascript"></textarea>
+          id="Skills"
+          name="Skills"
+            placeholder="skills e.g. HTML, CSS, Javascript"
+            value=""></textarea>
             
        
         <!-- skills -->
         <!-- <form 
             <textarea name="message" rows="50" cols="80"><input type = "text" placeholder="skills eg.HTML,CSS"</textarea> -->
-    </fieldset>
+       </fieldset>
 
           <fieldset>
             <legend>Projects</legend>
@@ -122,6 +148,7 @@
               id="Project"
               name="Project"
               placeholder="Project"
+              value=""
             /><br />
 
             <!-- Description -->
@@ -134,7 +161,10 @@
             /><br /> -->
 
             Description: <textarea rows="8" cols="30" 
-            placeholder="Write in HTML format"></textarea><br>
+            placeholder="Write in HTML format"
+            id="Description"
+            name="Description"
+            value=""></textarea><br>
 
 
             <!-- Link  -->
@@ -145,6 +175,7 @@
               name="Link"
               placeholder="Link"
               required
+              value=""
             /><br />
           </fieldset>
           <fieldset>
@@ -157,6 +188,7 @@
               id="Company"
               name="Company"
               placeholder="Company"
+              value=""
             /><br />
 
             <!-- Designation  -->
@@ -166,6 +198,7 @@
               id="Designation"
               name="Designation"
               placeholder="Designation"
+              value=""
             /><br />
             <!-- Duration -->
             <label for="Duration">Duration : </label>
@@ -174,6 +207,7 @@
               id="Duration"
               name="Duration"
               placeholder="Duration"
+              value=""
             /><br />
 
             <!-- Description -->
@@ -186,8 +220,13 @@
 
             /><br /> --> 
 
-            Description: <textarea rows="8" cols="30"
-             placeholder="Write in HTML format"></textarea><br>
+            Description: 
+            <textarea
+             rows="8" cols="30"
+             id="description"
+             name="description"
+             placeholder="Write in HTML format"
+             value=""></textarea><br>
 
           </fieldset>
           <button type="submit" class="btn">submit</button>
@@ -198,26 +237,56 @@
       <div class="right">
         <div class="block1">
           <!-- Name -->
+          
+            <p id="display-name"></p>
+        <!-- -------------------block 2     -->
+          </div>
+          
+          <div class="block2">
+            
+          <p id="display-Email"></p><p id="display-Phone"></p><p id="display-Github"></p><p id="display-Linkedin"></p>
           <!--Email , Phone , Github , Linkedin  -->
-        </div>
-        <div class="block2">
-          <h2>Education</h2>
-        </div>
-        <div class="block1">
-          <p>CGPA</p>
-         
-          
-        </div>
-        
-        <div class="block4">
-          
-          <h2>Project</h2>
-          <div class="block3"><h2>Skills</h2></div>
+
 
         </div>
-        <div class="block5">
+        <div class="block3">
+          <h2>Education</h2>
+        
+        
+          <p id="display-Degree"></p>
+          <p id="display-College"></p>
+          <p id="display-Starting Year"></p>
+          <p id="display-Passing Year"></p>
+          <!-- <p>CGPA </p> -->
+          <p id="display-CGPA"></p>
+        <hr>
+          <h2>Skills</h2>
+          <p id="display-Skills"></p>
+
+         <hr> 
+          <h2>Project</h2>
+          <p id="display-Project"></p>
+          <p id="display-Description"></p>
+          <p id="display-Link"></p>
+
+        <hr>
           <h2>Experience</h2>
-        </div>
+          <p id="display-Company"></p>
+          <p id="display-Designation"></p>
+          <p id="display-Duration"></p>
+          <p id="display-description"></p>
+          
+        </div>  
+
+        <!-- </div>
+        
+          <h2>Experience</h2>
+          <p id="display-company"></p>
+          <p id="display-Designation"></p>
+          <p id="display-Duration"></p>
+          <p id="display-Description"></p>
+          
+        </div> -->
         <button class="btn print" onclick="handlePrint()">Print</button>
       </div>
     </main>
