@@ -146,6 +146,7 @@ main>.right>.block2{
     width: 60vw;
     text-align: justify;
     flex-direction: row;
+    justify-content: space-around;
   
     
 }
