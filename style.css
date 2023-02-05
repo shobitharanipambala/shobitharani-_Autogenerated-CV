@@ -113,7 +113,7 @@ input[type=text], select, textarea {
 
 /* resume */
 main>.right{
-    background: whitesmoke;
+    background: rgb(246, 244, 244);
     overflow-y: auto;
     padding: 1rem;
     width: 70%;
@@ -131,10 +131,12 @@ main>.right>.block1{
     flex-direction: column;
     width: 60vw;
     text-align:center ;
-    color: rgb(130, 125, 130);
+    color: rgb(46, 48, 48);
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    size:30px;
+
 }
 
 main>.right>.block2{
@@ -142,11 +144,13 @@ main>.right>.block2{
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    color: rgb(20, 19, 19);
+    color: rgb(78, 162, 186);
     width: 60vw;
     text-align: justify;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
+
+    
   
     
 }
@@ -158,18 +162,10 @@ main>.right>.block3{
     color: rgb(20, 19, 19);
     width: 60vw;
     text-align:left ;
+    size:15px;
    
 
 } 
-   
-
-.right{
-    text-align: left;
-}
-
-
-
-
 
 .print{
     display: none;
